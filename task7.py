@@ -1,6 +1,6 @@
 # task 7
-def canHorseMovetoCell(x1, y1, x2, y2):
-    diff_x_y = abs(x2-x1) == 1 and abs(y2-y1) == 2
+def canQueenMovetoCell(x1, y1, x2, y2):
+    diff_x_y = x1 == x2 or y1 == y2 or abs(x1 - x2) == abs(y1 - y2)
     can = 'не може'
     if diff_x_y:
         can = 'може'
@@ -11,7 +11,7 @@ def canHorseMovetoCell(x1, y1, x2, y2):
     print(info)
 
 
-canHorseMovetoCell(1,1,2,3)
-canHorseMovetoCell(2,1,2,3)
-canHorseMovetoCell(3,1,4,3)
+canQueenMovetoCell(3,4,4,5)
+canQueenMovetoCell(2,1,1,3)
+canQueenMovetoCell(4,6,4,7)
 
